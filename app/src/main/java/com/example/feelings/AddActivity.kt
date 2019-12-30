@@ -35,7 +35,7 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun saveFeeling(){
-        val remark = editTextRemark.text
+        val remark = editTextRemark.text.toString()
         //val dateCreated =
         val intent = Intent()
         intent.putExtra(EXTRA_MOOD, mood)
