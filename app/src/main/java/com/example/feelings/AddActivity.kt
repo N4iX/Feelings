@@ -47,7 +47,7 @@ class AddActivity : AppCompatActivity() {
     }
 
     companion object{
-        const val EXTRA_MOOD = ""
-        const val EXTRA_REMARK = ""
+        const val EXTRA_MOOD = "com.example.feelings.MOOD"
+        const val EXTRA_REMARK = "com.example.feelings.REMARK"
     }
 }

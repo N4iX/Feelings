@@ -8,36 +8,48 @@
 
     <ImageView
         android:id="@+id/imageViewHappy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
         android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNeutral"
         app:layout_constraintEnd_toStartOf="@+id/imageViewNeutral"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewNeutral"
         app:srcCompat="@drawable/ic_sentiment_happy_yellow_24dp" />
 
     <ImageView
         android:id="@+id/imageViewNeutral"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp"
-        tools:layout_editor_absoluteX="193dp" />
+        app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp" />
 
     <ImageView
         android:id="@+id/imageViewSad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewNeutral"
         app:layout_constraintStart_toEndOf="@+id/imageViewNeutral"
-        app:srcCompat="@drawable/ic_sentiment_sad_yellow_24dp"
-        tools:layout_editor_absoluteY="250dp" />
+        app:layout_constraintTop_toTopOf="@+id/imageViewNeutral"
+        app:srcCompat="@drawable/ic_sentiment_sad_yellow_24dp" />
 
     <EditText
         android:id="@+id/editTextRemark"
