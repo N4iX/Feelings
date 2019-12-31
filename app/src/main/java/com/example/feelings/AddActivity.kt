@@ -2,6 +2,7 @@ package com.example.feelings
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -22,15 +23,23 @@ class AddActivity : AppCompatActivity() {
 
         imageViewHappy.setOnClickListener {
             mood = 3
+            it.setBackgroundColor(Color.GRAY)
+            imageViewNeutral.setBackgroundColor(Color.WHITE)
+            imageViewSad.setBackgroundColor(Color.WHITE)
         }
 
         imageViewNeutral.setOnClickListener {
             mood = 2
+            it.setBackgroundColor(Color.GRAY)
+            imageViewHappy.setBackgroundColor(Color.WHITE)
+            imageViewSad.setBackgroundColor(Color.WHITE)
         }
 
         imageViewSad.setOnClickListener {
             mood = 1
-            //it.background.colorFilter...
+            it.setBackgroundColor(Color.GRAY)
+            imageViewNeutral.setBackgroundColor(Color.WHITE)
+            imageViewHappy.setBackgroundColor(Color.WHITE)
         }
     }
 
