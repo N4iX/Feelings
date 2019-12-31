@@ -44,6 +44,12 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun saveFeeling(){
+
+        if(TextUtils.isEmpty(editTextRemark.text)) {
+            editTextRemark.setError("Value is required")
+            return
+        }
+
         val remark = editTextRemark.text.toString()
         //val dateCreated =
         val intent = Intent()
